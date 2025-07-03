@@ -1,0 +1,80 @@
+/* @tailwind tailwindcss/preflight
+@tailwind components; */
+@tailwind utilities;
+@import "tailwindcss";
+/* CSS Variables */
+:root {
+  --color-primary: #000000;
+  --color-secondary: #E6E6E6;
+  --color-accent-gold: #DBB469;
+  --color-accent-burnt: #F97068;
+  --color-white: #FFFFFF;
+  --color-accent-gold: #DBB469;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-primary);
+}
+
+/* Custom Utility Classes */
+@layer components {
+  .custom-bg {
+    background-color: var(--color-primary);
+  }
+
+  .custom-bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .custom-bg-accent-burnt {
+    background-color: var(--color-accent-burnt);
+  }
+
+  .custom-text {
+    color: var(--color-white);
+  }
+
+  .custom-text-primary {
+    color: var(--color-primary);
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-bold shadow-md hover:shadow-lg transition-shadow;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .btn-gold-outline {
+  @apply px-6 py-3 rounded-lg font-bold border-2 transition-all duration-300;
+  border-color: var(--color-accent-gold);
+  color: var(--color-accent-gold);
+}
+
+  .btn-outline {
+    @apply px-6 py-3 rounded-lg font-bold border hover:bg-black hover:text-white transition-all;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .section-header {
+    @apply text-4xl md:text-5xl lg:text-6xl mb-6;
+    font-family: var(--font-serif);
+  }
+}
+
+/* @layer components {
+  .btn-gold-outline {
+    @apply px-6 py-3 rounded-lg border-2 font-bold border-accentGold text-accentGold hover:bg-accentGold hover:text-black transition-all duration-300;
+  }
+} */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue.woff2") format("woff2"),
+       url("/fonts/HelveticaNeue.woff") format("woff");
+  font-weight: 400;
+  font-display: swap; /* Don't block rendering */
+}
