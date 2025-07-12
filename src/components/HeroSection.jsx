@@ -62,18 +62,30 @@ export default function HeroSection() {
             transition={{ delay: 1 }}
             className="mt-2 text-lg text-gray-300"
           >
-            Designed in Lagos. Worn worldwide. Unisex comfort meets Gen Z flex.
+            Designed in Lagos. Worn worldwide. Unisex comfort meets Gen Z flex. Presale now live!
           </motion.p>
 
-          <motion.button
+          {/* Updated Buy Button */}
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
-            onClick={() => navigate("/product")}
-            className="btn-primary mt-6 px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition"
+            className="mt-6 space-x-4"
           >
-            Shop the Drop
-          </motion.button>
+            <button
+              onClick={() => navigate("/product")}
+              className="btn-primary px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition"
+            >
+              Shop Presale Now
+            </button>
+            {/* Optional Secondary CTA for more info */}
+            <button
+              onClick={() => navigate("/product")}
+              className="px-6 py-3 bg-transparent border border-white text-white rounded-full font-semibold hover:bg-white hover:text-black transition"
+            >
+              View Collection
+            </button>
+          </motion.div>
         </div>
       </section>
     </>

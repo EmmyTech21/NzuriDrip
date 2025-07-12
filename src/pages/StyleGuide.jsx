@@ -177,7 +177,7 @@ export default function StyleGuide() {
             <h3 className="font-medium text-yellow-400 mb-4">Imagery Examples</h3>
             <div className="grid grid-cols-2 gap-4">
               <img src="/assets/hoodie-oatmeal.png" alt="Oatmeal Cream Hoodie" className="rounded w-full" />
-              <img src="/assets/jogger-set1.png" alt="Complete Set" className="rounded w-full" />
+              <img src="/assets/jogger-set1.webp" alt="Complete Set" className="rounded w-full" />
             </div>
           </div>
         </div>
