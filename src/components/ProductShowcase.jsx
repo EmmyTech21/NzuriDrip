@@ -82,10 +82,10 @@ export default function ProductShowcase() {
   );
 
   const price = activeTab === "hoodies"
-    ? 45000
+    ? 35000
     : activeTab === "crops"
-      ? 38000
-      : 150000;
+      ? 28000
+      : 120000;
 
   const handleBuyNow = () => {
     navigate(
