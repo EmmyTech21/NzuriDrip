@@ -76,7 +76,7 @@ export default function HeroSection() {
               onClick={() => navigate("/product")}
               className="btn-primary px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition"
             >
-              Shop Presale Now
+              Shop Now
             </button>
             {/* Optional Secondary CTA for more info */}
             <button
